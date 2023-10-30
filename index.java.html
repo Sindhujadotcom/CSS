@@ -1,0 +1,80 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Restaurant</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="food1.jpg" alt="Food 1">
+            <p class="item-name" onmouseover="showMenuCard(1)">Food 1</p>
+        </div>
+        <!-- Add more menu items here -->
+    </section>
+    <section id="about">
+        <!-- About Us content -->
+    </section>
+    <section id="contact">
+        <!-- Contact information -->
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+*CSS (styles.css):*
+css
+/* Style your website here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #ff6347;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 200px;
+    border: 1px solid #ddd;
+}
+
+.menu-card {
+    display: none;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: absolute;
+}
